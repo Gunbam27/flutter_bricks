@@ -1,0 +1,14 @@
+name: pr_ci
+description: Flutter PR CI (analyze + test) for GitHub Actions
+version: 0.1.0
+
+vars:
+  flutter_version:
+    type: string
+    description: Flutter SDK version for CI
+    default: "3.38.7"
+
+  base_branch:
+    type: string
+    description: PR base branch
+    default: "main"
