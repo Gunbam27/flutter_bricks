@@ -11,7 +11,7 @@ PR CI, main merge CI, Fastlane 연동 등
 #### 🧱 Bricks List   
 
 |Brick|Description|
-|------|---|---|
+|------|------|
 |pr_ci|PR 생성 시 실행되는 Flutter CI (analyze + test)|
 
 #### 🚧 추가 예정
