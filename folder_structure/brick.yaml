@@ -1,0 +1,14 @@
+name: folder_structure
+description: Flutter Clean Architecture folder structure
+version: 0.1.0
+
+vars:
+  include_core:
+    type: boolean
+    default: true
+    description: Include core layer
+
+  include_ui:
+    type: boolean
+    default: true
+    description: Include ui folder

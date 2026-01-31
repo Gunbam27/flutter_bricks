@@ -10,16 +10,18 @@ PR CI, main merge CI, Fastlane 연동 등
 
 #### 🧱 Bricks List   
 
-|Brick|Description|
-|------|------|
-|pr_ci|PR 생성 시 실행되는 Flutter CI (analyze + test)|
+| Brick            | Description                      |
+|------------------|----------------------------------|
+| pr_ci            | PR 생성 시 실행되는 Flutter CI (analyze + test) |
+| folder_structure | 프로젝트 생성시 클린아키텍처 구조의 폴더 생성        |
 
 #### 🚧 추가 예정
 
 - main merge CI
 - Android / iOS 분리 빌드
 - Fastlane 연동 CD
-- 필수 설치 라이브러리 및 아키텍처 구조 생성
+- 필수 설치 라이브러리   
+- ~~아키텍처 구조 생성~~
 
 
 #### 📦 Requirements
@@ -42,14 +44,18 @@ Flutter 프로젝트 루트에서:
 
 ##### 2️⃣ Brick 등록
 `mason add pr_ci --git-url https://github.com/Gunbam27/flutter_bricks.git --git-path pr_ci`   
+
+`mason add pr_ci --git-url https://github.com/Gunbam27/flutter_bricks.git --git-path folder_structure`
+
 → 추가시 mason.yaml 자동으로 수정 됨
 
 
 ##### 3️⃣ CI 생성
 `mason make pr_ci`
 
+`mason make folder_structure`   
 
-결과:
+결과 예시:
 
 .github/   
 └─ workflows/   

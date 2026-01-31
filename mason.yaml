@@ -1,3 +1,5 @@
 bricks:
   pr_ci:
     path: pr_ci
+  folder_structure:
+    path: folder_structure
